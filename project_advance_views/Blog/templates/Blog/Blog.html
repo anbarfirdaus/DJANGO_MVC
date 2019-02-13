@@ -1,0 +1,59 @@
+{%extends 'Home/base.html'%}
+
+{%load static%}
+
+{%block head%}
+    <title>HOME</title>
+{%endblock%}
+
+             
+{%block content%}
+        <!-- END OF CONTENT 1     -->
+        <!-- CONTENT 2 -->
+            <div class="container-fluid">
+                <div class="contentBlog">
+                    <img src="{% static 'img/kendala-sepulsa.jpg' %}">
+                    <h2>Punya Kendala? Segera Hubungi </h2>
+                    <p>Bagi Sepulsa, kepuasan pelanggan adalah yang utama.
+                        Kami senantiasa mendengarkan keluhan maupun kendala yang kamu
+                        hadapi selama melakukan transaksi di Sepulsa. Umumnya pelanggan
+                        Sepulsa menghadapi kendala sebagai berikut: Status Order Pending
+                       . Jika transaksi pembayaran sudah selesai, namun status order kamu 
+                       masih pending dalam jangka waktu 15 menit, segera hubungi tim
+                       Customer Service dengan menyertakan email...
+                    </p>
+                    <a href="#">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <!-- END OF CONTENT 2 -->
+            <!-- CONTENT 3 --> 
+            <div class="container-fluid">
+                <div class="contentBlog">
+                    <img class="contentBlog" src="{% static 'img/sms.png' %}">               
+                    <h2>OTP, Si Kode Rahasia nan Berbahaya</h2> 
+                    <p>Kemudahan dalam berbagai transaksi perbankan memang banyak
+                        memberikan keuntungan bagi nasabah. Bayangkan saja, aktivitas
+                        jual beli yang pada awalnya membutuhkan waktu san tempat,
+                        kini bisa dilakukakan tanpa perlu beranjak dari tempat
+                        duduk kamu dan pembayaran lunas dalam hitungan detik dengan
+                        transaksi online. Namun tanpa disadari, kemudahan tersebut
+                        bukan berarti tanpa celah. Sebelum kita membahas lebih... 
+                    </p>
+                    <a href="#">Baca Selengkapnya</a>   
+                </div>
+            </div>
+            <!-- -----input----- -->
+            {% for posting in blogs %}
+            <div class="container-fluid">
+                <div class="contentBlog">
+                    <img class="contentBlog" src="{{posting.model_pic}}">               
+                    <h2>{{poting.Title}}/h2> 
+                    <p>{{posting.Content}}
+                    </p>
+                    <a href="#">Baca Selengkapnya</a>   
+                </div>
+            </div>
+            {%endfor%}
+
+        <!-- END OF CONTENT 3 -->
+{%endblock%}

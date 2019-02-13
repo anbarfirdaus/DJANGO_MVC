@@ -1,0 +1,82 @@
+{%extends 'Home/base.html'%}
+
+{%load static%}
+
+{%block head%}
+    <title>Mentor</title>
+{%endblock%}
+
+             
+{%block content%}
+                <!-- bagian isi --> 
+                <div class="contentMentor">
+                    <div class="mentor">
+                        <h3>Our Mentor</h3><br>
+                    </div>
+                    <!-- AN-->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="MentorPic">
+                                <img class="MentorPic" src="{% static 'img/people-andreas.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h4> Andreas Nugroho</h4>
+                            <h5>Software Ninja (5 years experience)</h5>
+                            <p>"Great place to learn about programming. Come join us!"</p>
+                        </div>
+                    </div>
+                    <!-- RH -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="MentorPic">
+                                <img class="MentorPic" src="{% static 'img/people-ramdhan.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h4> Ramdhan Hidayat</h4>
+                            <h5>Master of Chaos (10 years experience)</h5>
+                            <p>"We make this program with passion, hard work and heart. 
+                                Let's get rock with us!" </p>
+                        </div>
+                    </div> 
+                    <!-- TRIMO -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="MentorPic">
+                                <img class="MentorPic" src="{% static 'img/people-trimo.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h4> Trimo Leksono</h4>
+                            <h5>Magician(8 years experience)</h5>
+                            <p>"The best place for who want to be a great IT talent"</p>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- ----------input---------- -->
+                    {% for paramentor in mentors %}
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="MentorPic">
+                            <img class="MentorPic" src="{{paramentor.model_pic}}">"
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h4>{{paramentor.name}}</h4>
+                            <h5>{{paramentor.occupation}}</h5>
+                            <p>{{paramentor.quotes}}</p>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+
+                </div>
+            </div>
+            <!--END OF PIC  -->
+{%endblock%}

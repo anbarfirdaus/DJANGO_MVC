@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/kebun_binatang.css' %}">
+
+        <title>database | Blog</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-12 text-center judul">BlogPost</div>
+        </div>
+        {% for data in blogpost %}
+        <div class="row">
+                <div class="col-md-4 text-center">
+                    <!-- <img src="{{data.images }}" alt=""> -->
+                </div>
+                <div class="col-md-8">
+                    <h3>{{ data.Title }}</h3>
+                    <small> content : {{ data.Content }}</small></div><br>
+                
+                </div>
+        </div>
+        {% endfor %}  
+    </body>
+</html>

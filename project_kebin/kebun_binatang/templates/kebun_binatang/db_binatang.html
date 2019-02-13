@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/kebun_binatang.css' %}">
+
+        <title>app | kebun binatang</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-12 text-center judul">Daftar Binatang 2</div>
+        </div>
+        {% for data in animals %}
+        <div class="row">
+                <div class="col-md-4 text-center">
+                    <!-- <img src="{{data.images }}" alt=""> -->
+                </div>
+                <div class="col-md-8">
+                    <h3>{{ data.nama }}</h3>
+                    <small> spesies : {{ data.species }}</small></div><br>
+                        description: {{ data.decription }}
+                </div>
+        </div>
+        {% endfor %}  
+    </body>
+</html>

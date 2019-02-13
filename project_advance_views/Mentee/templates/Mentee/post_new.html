@@ -1,0 +1,15 @@
+{%extends 'Home/base.html'%}
+
+{%load static%}
+
+{%block content%}
+    <h2 style="text-align: center"> Post New Mentee</h2>
+    <div style="text-align: center">
+    <form method="POST" class="post-form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ forms.as_p }}
+        <button style="text-align:center" type="submit" class="save btn btn-default"> Save</button>
+    </div>
+    </form>
+
+{%endblock%}

@@ -1,0 +1,15 @@
+{%extends 'Home/base.html'%}
+
+{%load static%}
+
+{%block content%}
+    <h2 style="text-align: center"> Post New Blog</h2>
+        <div style="text-align: center">
+            <form method="POST" class="post-form" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ forms.as_p }}
+            <button  style="text-align:center" type="submit" class="save btn btn-default"> Post</button>
+        </div>
+    </form>
+
+{%endblock%}

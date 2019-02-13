@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <title>Mentor</title>
+    </head>
+    <body>
+        <header class="box">
+            <div class="container-fluid">
+                <!-- --navigasi -->
+                <div class = "row">
+                    <div class="col-md-6 col-12" id="up">
+                        <span>Alpha Tech Academy</span>
+                    </div>
+                    <div class = "col-md-6 col-12">
+                        <nav>
+                            <ul id="nav">
+                                <li><a id="coba" href="{% url 'Home' %}">Home</a></li>
+                                <li><a id="coba" href="{% url 'Blog' %}">Blog</a></li>
+                                <li><a id="coba" href="{% url 'Mentor' %}">Mentor</a></li>
+                                <li><a id="coba" href="{% url 'Mentee' %}">Mentee</a></li>
+                                <li><a id="coba" href="{% url 'Author' %}">Author</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="container-fluid">        
+                <!-- box biru -->
+                <div class="boxBiru">
+                    <div class="col-12">
+                        <img src="{% static 'img/alpha_logo.png' %}">
+                        <div class="alphatech">
+                            <h1>Alpha Tech Academy</h1>
+                            <h6>Alpha Tech academy is a tech talent incubator that gives everyone (everyone
+                                    non IT background) a chance to be a professional Tech Talent within 3
+                                    months. Contact Person : Email : academy@alphatech.id. Mobile phone:
+                                    0877 9609 9530
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF BOX BIRU -->
+                <!-- bagian isi -->
+                <div class="contentMentor">
+                    <div class="mentor">
+                        <h3>Our Mentor</h3><br>
+                    </div>
+                    <!-- AN-->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="MentorPic">
+                                <img class="MentorPic" src="{% static 'img/people-andreas.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h4> Andreas Nugroho</h4>
+                            <h5>Software Ninja (5 years experience)</h5>
+                            <p>"Great place to learn about programming. Come join us!"</p>
+                        </div>
+                    </div>
+                    <!-- RH -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="MentorPic">
+                                <img class="MentorPic" src="{% static 'img/people-ramdhan.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h4> Ramdhan Hidayat</h4>
+                            <h5>Master of Chaos (10 years experience)</h5>
+                            <p>"We make this program with passion, hard work and heart. 
+                                Let's get rock with us!" </p>
+                        </div>
+                    </div> 
+                    <!-- TRIMO -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="MentorPic">
+                                <img class="MentorPic" src="{% static 'img/people-trimo.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h4> Trimo Leksono</h4>
+                            <h5>Magician(8 years experience)</h5>
+                            <p>"The best place for who want to be a great IT talent"</p>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+            <!-- END OF PIC  -->
+                <div class="bluebox">
+                    <span class="text">Our product:</span>
+                    <img src="{% static 'img/logo-grey-alphapay.png' %}">
+                    <img src="{% static 'img/logo-grey-sepulsa.png' %}">
+                    <img src="{% static 'img/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+
+            <!-- MULAI FOOTER -->
+        <footer>
+            <h5>Contact Person: Mobile phone: 0877 9609 9530. Email:academy@alphatech.id</h5>
+        </footer>
+
+    </body>
+</html>

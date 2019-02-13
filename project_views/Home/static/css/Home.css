@@ -1,0 +1,222 @@
+
+
+#coba{
+    color : black;
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    margin : 10px;
+}
+
+#nav{
+    padding-right: 30px;
+    margin: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    /* overflow: hidden; */
+}
+
+#up{
+    margin : 0px;
+    margin-top : 20px;
+}
+
+span{
+    font-size : 18px;
+}
+
+/* bagian biru */
+
+.boxBiru{
+    background-color:#00cad1;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    left: 0;
+    right: 0;
+}
+
+.alphatech {
+    color: white;
+}
+
+h6 {
+    padding-left :28%;
+    padding-right :28%;
+}
+
+/* bagian isi */
+
+img.contentPic{
+    vertical-align: text-bottom;
+}
+
+.contentPic{
+    text-align: center;
+}
+
+.contentHome{
+    padding: 50px;
+}
+
+/* ISI BAWAH  */
+.text-center {
+    text-align: center;
+}
+
+.column-learn{
+    max-width: 235px;
+    width : 100%;
+    height: 178px;
+    display : table;
+    margin: 5px auto;
+    border-radius: 5px;
+    border: 1px solid #EBEBEB;
+}
+
+.column-learn .column-middle{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.learn{
+    vertical-align: middle;
+    text-align: center;
+    /* width : 60%; */
+    padding: 10px;
+}
+
+.kotak{
+    height: 178px;
+    width: 100%;
+    /* display: table; */
+    margin : 15px;
+    border-radius: 5px;
+    border: 1px  solid #EBEBEB;
+}
+
+#margin{
+    margin: 10px 70px;
+}
+
+/* BLUEBOX */
+.bluebox{
+    text-align: center;
+    background-color: #00cad1;
+    color : black;
+    height: 70px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:100%;  
+    margin-bottom:60px;
+    right: 0;
+    left:0;
+}
+
+.text{
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+    color : white;
+    padding:15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* ---------AKHIR DARI HOME--- */
+
+/* MULAI BLOG */
+.contentBlog{
+    padding: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+img.contentBlog{
+    width:90%;
+    margin:0;
+} 
+/* AKHIR BLOG */
+
+/* MULAI MENTEE */
+.mentee{
+    text-align: center;
+    font-weight: bold;
+}
+
+img.MenteePic{
+    vertical-align: text-bottom;
+    height: 200px;
+}
+
+.MenteePic{
+    text-align: center;
+}
+
+.contentMentee{
+    padding: 50px;
+}
+/* AKHIR MENTEE */
+
+/* MULAI MENTOR */
+.mentor{
+    text-align: center;
+    font-weight: bold;
+}
+
+.contentMentor{
+    padding: 50px;
+}
+
+img.MentorPic{
+    vertical-align: text-bottom;
+    height: 200px;
+}
+
+.MentorPic{
+    text-align: center;
+}
+/* AKHIR MENTOR */
+
+/* MULAI AUTHOR */
+.contentAuthor{
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tableAuthor{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.titleAuthor{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.gmap_canvas{
+    margin-left: 40%;
+    
+}
+
+img.contentAuthor{
+    height:500px;
+}
+
+.ma
+/* AKHIR AUTHOR */

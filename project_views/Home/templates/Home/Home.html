@@ -1,0 +1,250 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <title>Home</title>
+    </head>
+    <body>
+        <header class="box">
+            <div class="container-fluid">
+                <!-- --navigasi -->
+                <div class = "row">
+                    <div class="col-md-6 col-12" id="up">
+                        <span>Alpha Tech Academy</span>
+                    </div>
+                    <div class = "col-md-6 col-12">
+                        <nav>
+                            <ul id="nav">
+                                <li><a id="coba" href="{% url 'Home' %}">Home</a></li>
+                                <li><a id="coba" href="{% url 'Blog' %}">Blog</a></li>
+                                <li><a id="coba" href="{% url 'Mentor' %}">Mentor</a></li>
+                                <li><a id="coba" href="{% url 'Mentee' %}">Mentee</a></li>
+                                <li><a id="coba" href="{% url 'Author' %}">Author</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="container-fluid">        
+                <!-- box biru -->
+                <div class="boxBiru">
+                    <div class="col-12">
+                        <img src="{% static 'img/alpha_logo.png' %}">
+                        <div class="alphatech">
+                            <h1>Alpha Tech Academy</h1>
+                            <h6>Alpha Tech academy is a tech talent incubator that gives everyone (everyone
+                                    non IT background) a chance to be a professional Tech Talent within 3
+                                    months. Contact Person : Email : academy@alphatech.id. Mobile phone:
+                                    0877 9609 9530
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- bagian isi -->
+                <div class="contentHome">
+                    <!-- LAT -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="contentPic">
+                                <img class="contentPic" src="{% static 'img/comp.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h3> Learn awesome tech</h3>
+                            <p>You will learn about programming language, such as Python and Javascript, 
+                            buid back-end apps using Flask framework with microservice concept, 
+                            build client-site apps using React Library, etc. </p>
+                        </div>
+
+                    </div>
+                    <!-- LNJ -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="contentPic">
+                                <img class="contentPic" src="{% static 'img/search.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h3> Land new job</h3>
+                            <p>If you can pass this awesome program, you will be part of our reliable
+                                tech team for especially Software Engineer position and other tech position
+                                such as quality Engineer, System Analyst, etc. </p>
+                        </div>
+                    </div> 
+                    <!-- GPTL -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="contentPic">
+                                <img class="contentPic" src="{% static 'img/coin.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h3> Get paid to learn</h3>
+                            <p>Join for free and earn some money. Yes, you read that right, no registration fee 
+                                required to enter this program. To make things even better, you will receive pocket
+                                money just for participacing. Cool, right?
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- WAW  -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="contentPic">
+                                <img class="contentPic" src="{% static 'img/people.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12>">
+                            <h3> Who are we?</h3>                                
+                            <p>Join for free and earn some money. Yes, you read that right, no registration fee 
+                                required to enter this program. To make things even better, you will receive pocket
+                                money just for participacing. Cool, right?
+                            </p>
+                            <br>
+                            <h3>What is our mission?</h3>
+                            <p>We want to improve capability Tech Talent in Indonesia</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                <!-- isi bawah -->
+                <div class = "bottom">
+                    <div>
+                        <h3 class="text-center">What will you learn?</h3>
+                    </div>
+                    
+                    <div>
+
+                    </div>
+                </div>
+   
+                
+            <div class="container-fluid">
+            <!-- atas -->
+               
+                <div class = "row learn" id="margin">
+                    <!-- pict 1 -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="column-learn">
+                            <div class="column-middle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img class="learn" src="{% static 'img/learn-html.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- pict2 -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="column-learn">
+                            <div class="column-middle">                                    
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img class="learn" src="{% static 'img/learn-programming.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- pict3 -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="column-learn">
+                            <div class="column-middle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img class="learn" src="{% static 'img/learn-git.png' %}">
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- pict 4 -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="column-learn">
+                            <div class="column-middle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img class="learn" src="{% static 'img/learn-api.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+               
+            <!-- bawah -->
+            <div class = "row learn" id="margin">
+                <!-- pict 5 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="column-learn">
+                        <div class="column-middle">
+                            <div class="learn-img">
+                                <div class="learn-img-middle">
+                                    <img class="learn" src="{% static 'img/learn-react.png' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!-- pict6 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="column-learn">
+                        <div class="column-middle">                                    
+                            <div class="learn-img">
+                                <div class="learn-img-middle">
+                                    <img class="learn" src="{% static 'img/learn-tdd.png' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!-- pict7 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="column-learn">
+                        <div class="column-middle">
+                            <div class="learn-img">
+                                <div class="learn-img-middle">
+                                    <img class="learn" src="{% static 'img/learn-server.png' %}">
+                                </div>                                    
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!-- pict 8 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="column-learn">
+                        <div class="column-middle">
+                            <div class="learn-img">
+                                <div class="learn-img-middle">
+                                    <img class="learn" src="{% static 'img/learn-scrum.png' %}">
+                                </div>
+                                </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- END OF PIC  -->
+                <div class="bluebox">
+                    <span class="text">Our product:</span>
+                    <img src="{% static 'img/logo-grey-alphapay.png' %}">
+                    <img src="{% static 'img/logo-grey-sepulsa.png' %}">
+                    <img src="{% static 'img/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+
+            <!-- MULAI FOOTER -->
+        <footer>
+            <h5>Contact Person: Mobile phone: 0877 9609 9530. Email:academy@alphatech.id</h5>
+        </footer>
+
+    </body>
+</html>

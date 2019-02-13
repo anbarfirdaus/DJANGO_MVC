@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <title>Author</title>
+    </head>
+    <body>
+        <header class="box">
+            <div class="container-fluid">
+                <!-- --navigasi -->
+                <div class = "row">
+                    <div class="col-md-6 col-12" id="up">
+                        <span>Alpha Tech Academy</span>
+                    </div>
+                    <div class = "col-md-6 col-12">
+                        <nav>
+                            <ul id="nav">
+                                <li><a id="coba" href="{% url 'Home' %}">Home</a></li>
+                                <li><a id="coba" href="{% url 'Blog' %}">Blog</a></li>
+                                <li><a id="coba" href="{% url 'Mentor' %}">Mentor</a></li>
+                                <li><a id="coba" href="{% url 'Mentee' %}">Mentee</a></li>
+                                <li><a id="coba" href="{% url 'Author' %}">Author</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="container-fluid">        
+                <!-- box biru -->
+                <div class="boxBiru">
+                    <div class="col-12">
+                        <img src="{% static 'img/alpha_logo.png' %}">
+                        <div class="alphatech">
+                            <h1>Alpha Tech Academy Blog</h1>
+                            <h6>Alpha Tech academy is a tech talent incubator that gives everyone (everyone
+                                    non IT background) a chance to be a professional Tech Talent within 3
+                                    months. Contact Person : Email : academy@alphatech.id. Mobile phone:
+                                    0877 9609 9530
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF BOX BIRU -->
+                <!-- bagian isi -->
+                <div class="contentAuthor">
+                    <img class="contentAuthor" src="{% static 'img/profile-pic2.jpg' %}">
+                    <div class="titleAuthor">
+                        <h4>Nama Author</h4>
+                        <p><span style="font-weight: bold">Anbar Firdaus.</span>
+                        Anbar Firdaus. I am from Tangerang. Born on June 1996. Read the list below
+                        </p>
+                    </div>
+                    <table class="tableAuthor" style="width:1000px">
+                        <tr>
+                            <td>Alamat </td>
+                            <td>: Mandalawangi </td>
+                        </tr>
+                        <tr>
+                            <td>Telephone </td>
+                            <td>: 085717660766</td>
+                        </tr>
+                        <tr>
+                            <td>Education </td>
+                            <td>: Bachelor of Industrial engineering</td>    
+                        </tr>
+                        <tr>
+                            <td>Profession </td>
+                            <td>: Student</td>
+                        </tr>
+                        <tr>
+                            <td>Nationality </td>
+                            <td>: Indonesian</td>
+                        </tr>
+                        <tr>
+                            <td>Company </td>
+                            <td>: Alphatech Academy</td>
+                        </tr>
+                        <tr>
+                            <td>Email </td>
+                            <td>: anbar@alphatech.id</td>
+                        </tr>
+                        <tr>
+                            <td>Adress </td>
+                            <td>: Mandalawangi</td>
+                        </tr>
+                    </table>
+                    <div class="mapouter text-center" ><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=sepulsa%20lodge%20malang&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+                        <style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas 
+                        {overflow:hidden;background:none!important;height:500px;width:600px;}
+                        </style>
+                        </div>
+                    
+                
+                    
+              
+                </div>
+            </div>
+            <!-- END OF PIC  -->
+                <div class="bluebox">
+                    <span class="text">Our product:</span>
+                    <img src="{% static 'img/logo-grey-alphapay.png' %}">
+                    <img src="{% static 'img/logo-grey-sepulsa.png' %}">
+                    <img src="{% static 'img/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+
+            <!-- MULAI FOOTER -->
+        <footer>
+            <h5>Contact Person: Mobile phone: 0877 9609 9530. Email:academy@alphatech.id</h5>
+        </footer>
+
+    </body>
+</html>
